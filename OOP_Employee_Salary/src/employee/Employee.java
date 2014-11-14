@@ -16,10 +16,11 @@ public abstract class Employee implements Comparable {
 		this.id = id;
 		this.name = name;
 		this.salary_rate=rate;
+		this.employee_salary=salaryCalc();
 	};
 	
 	public void salaryPrint (){
-		System.out.println("Employee_ID="+id+" "+"Employee NAME:"+name+" "+"SALARY="+this.salaryCalc());
+		System.out.println("Employee_ID="+id+" "+"Employee NAME:"+name+" "+"SALARY="+this.employee_salary);
 	};
 	
 	/* Перегрузка метода CompareTo() 
