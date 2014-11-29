@@ -51,6 +51,8 @@ public class Main {
 		
 		System.out.println("Переопределение toString " + workers[1]);
 		
+		boolean equalWorkersAfter = workers[2].equals(workers[1]);
+		System.out.println("Объекты 3 и 2 равны ?" + equalWorkersAfter);
 		
 		/*  
 		 * Запись объектов в Array List - вариант 2
