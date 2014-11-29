@@ -26,21 +26,22 @@ public class Main {
 		workers[2] = new Employee_hour(0, "");
 		workers[3] = new Employee_hour(0, "");
 		
-		workers[0].employeeSet(2,"Igor",10);
+		workers[0].employeeSet(0,"Igor",10);
 		workers[0].salaryPrint();
 		
-		workers[1].employeeSet(0,"Denis",100);
+		workers[1].employeeSet(1,"Denis",100);
 		workers[1].salaryPrint();
 		
-		workers[2].employeeSet(1,"Mickhail",8);
+		workers[2].employeeSet(2,"Mickhail",8);
 		workers[2].salaryPrint();
 		
-		workers[3].employeeSet(3,"Mickhail",8);
+		workers[3].employeeSet(2,"Mickhail",8);
 		workers[3].salaryPrint();
 		
+		// после сортировки equals работат неправильно !!!
 		boolean equalWorkers = workers[3].equals(workers[2]);
 		System.out.println("Объекты 3 и 2 равны ?" + equalWorkers);
-		
+				
 		Arrays.sort(workers);
 		System.out.println("Результаты сортировки:");
 		
@@ -50,7 +51,6 @@ public class Main {
 		
 		System.out.println("Переопределение toString " + workers[1]);
 		
-		System.out.println( workers[3].equals(workers[2]) ? "Работники одинаковы ": "Работники НЕ одинаковы ");
 		
 		/*  
 		 * Запись объектов в Array List - вариант 2
