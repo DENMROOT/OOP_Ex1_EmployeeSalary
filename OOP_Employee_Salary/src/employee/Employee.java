@@ -1,5 +1,6 @@
 package employee;
 
+import java.awt.Point;
 import java.text.Collator;
 import java.util.Locale;
 
@@ -22,6 +23,24 @@ public abstract class Employee implements Comparable {
 	public void salaryPrint (){
 		System.out.println("Employee_ID="+id+" "+"Employee NAME:"+name+" "+"SALARY="+this.employee_salary);
 	};
+	
+	public String toString () {
+		
+		return "Employee name = " + name;
+	}
+	
+	public boolean equals (Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		
+		final Employee other = (Employee) obj; 
+		
+		System.out.println(name);
+		System.out.println(other.name);
+		if (name.equals(other.name)) return true;
+		else return false;
+			
+	} 
 	
 	/* Перегрузка метода CompareTo() 
 	 * (non-Javadoc)
